@@ -1,0 +1,2 @@
+Siti utili per Django:
+https://www.djangosites.org/
