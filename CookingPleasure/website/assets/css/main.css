@@ -1562,13 +1562,13 @@
 			}
 
 		.wrapper.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #ff4500 url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #e97770 url("images/overlay.png");
+				background: #ff4500 url("images/overlay.png");
 				color: #fff;
 			}
 
@@ -1736,7 +1736,7 @@
 	}
 
 		#highlights .highlight h3 {
-			color: #e97770;
+			color: #ff4500;
 		}
 
 /* Copyright */
@@ -2020,6 +2020,7 @@
 					border-radius: 0.35em;
 					box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
 					padding: 0 1.5em 0 1.5em;
+                    background-color: rgba(255, 69, 0, 0.4);
 				}
 
 					#nav > ul > li {
@@ -2030,6 +2031,7 @@
 
 						#nav > ul > li > ul {
 							display: none;
+                            background-color: rgba(255, 69, 0, 0.4);
 						}
 
 						#nav > ul > li > a, #nav > ul > li > span {
@@ -2060,7 +2062,7 @@
 
 			.dropotron {
 				background: #222835 url("images/overlay.png");
-				background-color: rgba(44, 50, 63, 0.925);
+				background-color: rgba(255, 69, 0, 0.4);
 				padding: 1.25em 1em 1.25em 1em;
 				border-radius: 0.35em;
 				box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
