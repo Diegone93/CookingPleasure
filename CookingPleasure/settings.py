@@ -7,12 +7,22 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'CookingPleasure',
-        'USER': 'developerAccess',
-        'PASSWORD': 'developeraccess',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'USER': 'root',
+        'PASSWORD': '210893ei',
+
     }
 }
+MIDDLEWARE_CLASSES = (
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+)
+ROOT_URLCONF = 'CookingPleasure.urls'
+WSGI_APPLICATION = 'CookingPleasure.wsgi.application'
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -20,6 +30,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin'
 )
-TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(__file__), 'website/templates')
-)
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 's_vhwve^l#=*$(eug)!lolltv@4p3*vblgf4!)juqs!igh^!ib'
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+STATIC_URL = '/static/'
