@@ -34,4 +34,4 @@ INSTALLED_APPS = (
 SECRET_KEY = 's_vhwve^l#=*$(eug)!lolltv@4p3*vblgf4!)juqs!igh^!ib'
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 STATIC_URL = '/static/'
-#porca la madonna
+#commento
