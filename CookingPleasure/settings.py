@@ -7,9 +7,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'CookingPleasure',
-        'USER': 'root',
-        'PASSWORD': '210893ei',
-
+        'USER': 'developeraccess',
+        'PASSWORD': 'developeraccess',
     }
 }
 MIDDLEWARE_CLASSES = (

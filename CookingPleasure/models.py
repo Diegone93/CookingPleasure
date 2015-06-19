@@ -1,4 +1,5 @@
 from django.db import models
+import string
 
 class User(models.Model):
     first_name = models.CharField(max_length=50)
@@ -6,6 +7,9 @@ class User(models.Model):
     nickname = models.CharField(max_length=100, primary_key=True)
     mail = models.CharField(max_length=100, unique=True)
     password = models.CharField(max_length=50)
+
+    def get_full_name(self):
+        return '%s %s' % (string.capwords(self.first_name), string.capwords(self.last_name))
 
     def __unicode__(self):
         return u'%s' % (self.nickname)
